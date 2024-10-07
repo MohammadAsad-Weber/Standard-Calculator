@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <input type="text" name="Calculator" id="Input" readonly>
+
+        <div id="hr"></div>
+
+    <div id="buttons">
+        <div class="row one">
+            <button style="color:aquamarine" onclick="Clear()">AC</button>
+            <button style="color:aquamarine" onclick="Back()">DE</button>
+            <button style="color:aquamarine" onclick="Type('.')">.</button>
+            <button style="color:aquamarine" onclick="Type('/')">/</button>
+        </div>
+
+        <div class="row two">
+            <button onclick="Type('7')">7</button>
+            <button onclick="Type('8')">8</button>
+            <button onclick="Type('9')">9</button>
+            <button style="color:aquamarine" onclick="Type('*')">*</button>
+        </div>
+
+        <div class="row three">
+            <button onclick="Type('4')">4</button>
+            <button onclick="Type('5')">5</button>
+            <button onclick="Type('6')">6</button>
+            <button style="color:aquamarine" onclick="Type('-')">-</button>
+        </div>
+
+        <div class="row four">
+            <button onclick="Type('1')">1</button>
+            <button onclick="Type('2')">2</button>
+            <button onclick="Type('3')">3</button>
+            <button style="color:aquamarine" onclick="Type('+')">+</button>
+        </div>
+
+        <div class="row five">
+            <button onclick="Type('00')">00</button>
+            <button onclick="Type('0')">0</button>
+            <button style="color:aquamarine" onclick="Calculate()">=</button>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
